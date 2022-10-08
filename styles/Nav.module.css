@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  width: 100vw;
+}
+
+.left {
+  width: 20%;
+  text-align: center;
+}
+
+.right {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbtn {
+  padding: 8px 24px;
+  background: transparent;
+  border: none;
+  background-color: #38e54d;
+  color: black;
+  border-radius: 4px;
+}

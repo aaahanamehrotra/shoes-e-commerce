@@ -1,0 +1,10 @@
+.profile {
+  border: 1px solid white;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.profilegrp {
+  margin-block: 20px;
+}
