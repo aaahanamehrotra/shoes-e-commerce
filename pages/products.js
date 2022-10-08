@@ -1,5 +1,5 @@
 import clientPromise from "../lib/mongodb";
-import styles from "../styles/products.module.css";
+import styles from "../styles/Products.module.css";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 import React from "react";
