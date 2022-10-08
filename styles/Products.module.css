@@ -25,7 +25,7 @@
 .productimage {
   border-radius: 4px;
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .productprice {
@@ -59,7 +59,8 @@
   color: white;
 }
 .cartbutton {
-  background-color: #7fb77e;
+  background-color: #38e54d;
+  color: black;
 }
 
 @media (max-width: 900px) {

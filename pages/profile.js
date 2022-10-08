@@ -6,7 +6,7 @@ import { signIn } from "next-auth/react";
 import NavStyles from "../styles/Nav.module.css";
 import SignInTo from "../styles/SignInTo.module.css";
 
-function profile() {
+function Profile() {
   const { data: session } = useSession();
 
   return (
@@ -44,4 +44,4 @@ function profile() {
   );
 }
 
-export default profile;
+export default Profile;

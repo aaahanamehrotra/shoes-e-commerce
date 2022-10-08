@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import React from "react";
 import Navbar from "../components/Navbar";
 
-function products({ products }) {
+function Products({ products }) {
   const { data: session } = useSession();
   return (
     <>
@@ -28,7 +28,7 @@ function products({ products }) {
               <div className={styles.buttons}>
                 <button className={styles.viewbutton}>View Details</button>
                 {/* <button className={styles.wishbutton}>WishList</button> */}
-                <button className={styles.cartbutton}>Add to Cart</button>
+                <button className={styles.cartbutton}>Buy Now</button>
               </div>
             </div>
           ))}
@@ -38,7 +38,7 @@ function products({ products }) {
   );
 }
 
-export default products;
+export default Products;
 
 export async function getServerSideProps(context) {
   const client = await clientPromise;

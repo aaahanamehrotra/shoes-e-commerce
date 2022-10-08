@@ -7,10 +7,8 @@ import Dashboard from "./dashboard";
 import Singup from "./singup";
 
 export default function Navbar({ session }) {
-  console.log(session ? session.user.name : "");
   return (
     <nav className={styles.navbar}>
-      {/* {session ? <Dashboard session={session} /> : <Singup session={session} />} */}
       <div className={styles.left}>HEllo</div>
       <div className={styles.right}>
         <Link href="/">
