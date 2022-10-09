@@ -1,6 +1,6 @@
 ## Getting Started
 
-Create a set up in nextjs with next-auth. In this article we create a demo project with next-auth library
+Create a set up in nextjs with next-auth and
 .
 
 ### Require `.env` variable for run demo in locally
@@ -22,9 +22,7 @@ How to Genrate the secret using openssl command copy and paste >
 `openssl rand -base64 32`
 
 ```
-secret= v7CO-My-Secret-BVZ2kwusMNs=
-GITHUB_ID = Iv1-My-Github-Id-f1b
-GITHUB_SECRET= a220c-My-Github-Secret-fb9fee6968
+
 ```
 
 First, Adding enviment varable in project then start the development server:
@@ -37,3 +35,4 @@ yarn dev
 
 ##References
 https://github.com/officialrajdeepsingh/next-auth
+https://www.techomoro.com/how-to-connect-mongodb-atlas-with-a-next-js-app/
