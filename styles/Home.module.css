@@ -56,3 +56,14 @@
 .text {
   font-size: 30px;
 }
+
+.usp {
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+.circle {
+  background-color: #fff;
+  /* padding: 20px; */
+  /* border-radius: 50%; */
+}

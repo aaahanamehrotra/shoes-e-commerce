@@ -1,0 +1,28 @@
+.stats {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-block: 120px;
+}
+.component {
+  height: 240px;
+  width: 240px;
+  background-color: coral;
+  border-radius: 4px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 90px;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  margin-block: 10px;
+}

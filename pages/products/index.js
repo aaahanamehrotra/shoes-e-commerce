@@ -1,9 +1,9 @@
-import clientPromise from "../lib/mongodb";
-import styles from "../styles/Products.module.css";
+import clientPromise from "../../lib/mongodb";
+import styles from "../../styles/Products.module.css";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 
 function Products({ products }) {
   const { data: session } = useSession();

@@ -9,12 +9,12 @@ import Singup from "./singup";
 export default function Navbar({ session }) {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.left}>HEllo</div>
+      <div className={styles.left}>Lorem Ipsum</div>
       <div className={styles.right}>
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/">
+        <Link href="/about">
           <a>About</a>
         </Link>
         <Link href="/products">

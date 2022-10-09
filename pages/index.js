@@ -23,9 +23,7 @@ export default function Component() {
             loader={() =>
               "https://www.freepnglogos.com/uploads/shoes-png/shoes-wasatch-running-3.png"
             }
-            src={
-              "https://i.pinimg.com/originals/91/22/53/91225339a1b7bbf078a67833cc63d785.jpg"
-            }
+            src={"/images/usp"}
             width={400}
             height={400}
           ></Image>
