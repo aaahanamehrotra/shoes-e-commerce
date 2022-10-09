@@ -4,12 +4,15 @@
   justify-content: space-around;
   width: 100%;
   padding-block: 120px;
+  flex-wrap: wrap;
 }
 .component {
   height: 240px;
   width: 240px;
   background-color: coral;
   border-radius: 4px;
+  margin: 20px;
+
   color: black;
   display: flex;
   align-items: center;
