@@ -33,6 +33,6 @@ npm run dev
 yarn dev
 ```
 
-##References
+## References
 https://github.com/officialrajdeepsingh/next-auth
 https://www.techomoro.com/how-to-connect-mongodb-atlas-with-a-next-js-app/
