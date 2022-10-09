@@ -22,11 +22,17 @@
 .large {
   font-size: 120px;
   text-align: justify;
-  color: black;
+
+  background: -webkit-linear-gradient(45deg, #349ff7 35%, #ef5e37 10%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .tagline {
-  color: black;
+  color: #5d5d5d;
   font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
 .stats {

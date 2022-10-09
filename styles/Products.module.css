@@ -32,6 +32,8 @@
   padding-inline: 16px;
   text-align: end;
   margin-top: 5px;
+  color: #d5d5d5;
+  font-weight: 700;
 }
 
 .buttons {
@@ -61,6 +63,10 @@
 .cartbutton {
   background-color: #38e54d;
   color: black;
+}
+
+.cartbutton:hover {
+  font-weight: bold;
 }
 
 @media (max-width: 900px) {

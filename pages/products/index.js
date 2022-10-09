@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Link from "next/link";
 
 function Products({ products }) {
   const { data: session } = useSession();
@@ -26,7 +27,11 @@ function Products({ products }) {
               <h3 className={styles.productname}>{product.name}</h3>
               <div className={styles.productprice}>{product.price}</div>
               <div className={styles.buttons}>
-                <button className={styles.viewbutton}>View Details</button>
+                <button className={styles.viewbutton}>
+                  <Link href={`/products/${product._id}`}>
+                    <a>View Details</a>
+                  </Link>
+                </button>
                 {/* <button className={styles.wishbutton}>WishList</button> */}
                 <button className={styles.cartbutton}>Buy Now</button>
               </div>
