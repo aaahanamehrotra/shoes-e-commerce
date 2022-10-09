@@ -5,12 +5,15 @@ import { signIn } from "next-auth/react";
 import { signOut } from "next-auth/react";
 import Dashboard from "./dashboard";
 import Singup from "./singup";
+import { useState } from "react";
 
 export default function Navbar({ session }) {
+  const [active, setActive] = useState(false);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>Lorem Ipsum</div>
-      <div className={styles.right}>
+      <div className={styles.right} style={active ? { left: "0" } : {}}>
         <Link href="/">
           <a>Home</a>
         </Link>
@@ -36,6 +39,11 @@ export default function Navbar({ session }) {
             Sign in
           </button>
         )}
+      </div>
+      <div className={styles.hamburger} onClick={() => setActive(!active)}>
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
+        <span className={styles.line}></span>
       </div>
     </nav>
   );
