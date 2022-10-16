@@ -10,31 +10,46 @@ function About() {
   return (
     <>
       <Navbar session={session} />
-      <h1 className="page-heading">About Us</h1>
-      {/* <div className={styles.products}>
-      <div className={styles.productsrow}>
-    <Image src={"/images/usp.png"} width={80} height={80} className={styles.img2}/>
-      
-      <h3>Lorem & Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div><div className={styles.productsrow}>
-    <Image src={"/images/usp.png"} width={80} height={80} className={styles.img2}/>
-      
-      <h3>Lorem & Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div><div className={styles.productsrow}>
-    <Image src={"/images/usp.png"} width={80} height={80} className={styles.img2}/>
-      
-      <h3>Lorem & Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div><div className={styles.productsrow}>
-    <Image src={"/images/usp.png"} width={80} height={80} className={styles.img2}/>
-      
-      <h3>Lorem & Ipsum</h3>
-      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-    </div>
-    
-  </div> */}
+      <h1 className="page-heading">About Lorem Ipsum</h1>
+
+      <div className={styles.container}>
+        <section className={styles.main}>
+          <p className={styles.p}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            quis, fuga dicta, optio doloribus facere veniam officia sunt maxime
+            cum eos nisi! Ipsam molestias maiores saepe quis placeat. Tempora,
+            mollitia explicabo maxime ut quas itaque nisi fuga quae officiis
+            accusamus ab consectetur dicta placeat, totam velit assumenda in ex
+            tenetur! Unde atque sed quisquam quas autem deserunt dicta harum
+            inventore, vero, velit aliquam consequuntur ut ratione. Quis dolor
+            et totam voluptate repellendus enim esse vel suscipit delectus
+            laboriosam dolorum, sapiente odio tempore voluptates, praesentium
+            expedita qui nostrum dicta eaque. Voluptatem ad cum porro fugiat ex
+            odio, fuga impedit officiis quia recusandae exercitationem omnis nam
+            autem explicabo eligendi debitis doloribus maiores illum error!
+            Perspiciatis, nihil. Error, sit repellendus dicta dignissimos
+            molestias libero aspernatur! Inventore nihil debitis explicabo fuga
+            voluptates.
+          </p>
+          <br />
+          {/* <Image
+            src={"/images/favicon.png"}
+            alt=""
+            width="500"
+            height="500"
+            className={styles.logo}
+          /> */}
+        </section>
+        <aside className={styles.sidebar}>
+          <p className={styles.red}>ANNOUNCEMENT!</p>
+          <div className={styles.sidetext}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+            consequatur dolore eos doloribus, quas tempore. Vitae architecto
+            distinctio assumenda deserunt ut nisi minus eveniet, dolore modi
+            tenetur explicabo, laboriosam repudiandae inventore illum.
+          </div>
+        </aside>
+      </div>
       <div className={styles.stats}>
         <div className={styles.component}>
           <Image src={"/images/usp.png"} width={80} height={80} />
