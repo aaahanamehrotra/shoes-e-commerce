@@ -33,7 +33,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 ## Environment Variables
 
 Create a .env file and add the following variables<br>
@@ -46,7 +45,7 @@ GITHUB_SECRET=<br>
 MONGODB_URI=<br>
 MONGODB_DB=
 
-
 ## References
+
 https://github.com/officialrajdeepsingh/next-auth <br>
 https://www.techomoro.com/how-to-connect-mongodb-atlas-with-a-next-js-app/

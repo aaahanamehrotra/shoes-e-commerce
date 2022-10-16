@@ -3,7 +3,10 @@ import Navbar from "/components/Navbar";
 import Dashboard from "../components/dashboard";
 import Singup from "../components/singup";
 import styles from "../styles/Home.module.css";
+import testimonials from "../styles/Testimonials.module.css";
 import Image from "next/image";
+import data from "../data/homepage";
+import testimonialdata from "../data/testimonials";
 
 export default function Component() {
   const { data: session } = useSession();
@@ -29,22 +32,35 @@ export default function Component() {
           ></Image>
         </div>
       </div>
+
       <div className={styles.stats}>
-        <div className={styles.square}>
-          <h1 className={styles.number}>2000</h1>
-          <h6 className={styles.text}>Products</h6>
-        </div>
-        <div className={styles.square}>
-          <h1 className={styles.number}>20</h1>
-          <h6 className={styles.text}>Stores</h6>
-        </div>
-        <div className={styles.square}>
-          <h1 className={styles.number}>200</h1>
-          <h6 className={styles.text}>Designs</h6>
-        </div>
-        <div className={styles.square}>
-          <h1 className={styles.number}>20</h1>
-          <h6 className={styles.text}>Categories</h6>
+        {data.map((d) => (
+          <div className={styles.square} key={d.id}>
+            <h1 className={styles.number}>{d.number}</h1>
+            <h6 className={styles.text}>{d.text}</h6>
+          </div>
+        ))}
+      </div>
+
+      <div className={testimonials.testimonials}>
+        <h1 className={testimonials.h1}>Testimonials</h1>
+        <div className={testimonials.cards}>
+          {testimonialdata.map((testimonial) => (
+            <div className={testimonials.card} key={testimonial.id}>
+              <div className={testimonials.top}>
+                <Image
+                  src={testimonial.img}
+                  height={80}
+                  width={80}
+                  className={testimonials.img}
+                />
+              </div>
+              <div className={testimonials.bottom}>
+                <h2 className={testimonials.name}>{testimonial.name}</h2>
+                <p className={testimonials.text}>{testimonial.text}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

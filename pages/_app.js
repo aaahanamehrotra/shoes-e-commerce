@@ -16,6 +16,10 @@ export default function App({
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
       </Head>
       <Component {...pageProps} />
+
+      <footer>
+        <p>Copyright &copy; 2022 Lorem Ipsum Official Website</p>
+      </footer>
     </SessionProvider>
   );
 }

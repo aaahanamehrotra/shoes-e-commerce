@@ -13,7 +13,7 @@ function Profile() {
     <>
       <Navbar session={session} />
       <h1 className="page-heading">Profile</h1>
-      <div>
+      <div className={styles.container}>
         {!session && (
           <div className={SignInTo.container}>
             <h1 className={SignInTo.large}>403</h1>

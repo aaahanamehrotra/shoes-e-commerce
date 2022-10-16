@@ -8,3 +8,7 @@
 .profilegrp {
   margin-block: 20px;
 }
+
+.container {
+  min-height: 55vh;
+}

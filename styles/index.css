@@ -38,3 +38,11 @@ a {
   text-align: center;
   margin-block: 40px;
 }
+
+footer {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  padding-block: 6vh;
+}
