@@ -46,7 +46,7 @@ function About() {
       </div>
       <div className={styles.stats}>
         {data.map((d) => (
-          <div className={styles.component}>
+          <div className={styles.component} key={d.key}>
             <Image src={d.img} width={80} height={80} />
             <h6 className={styles.text}>{d.text}</h6>
           </div>
