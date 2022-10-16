@@ -1,8 +1,8 @@
-.input-group {
+.inputgroup {
   margin: 30px 0;
 }
 
-.input-group > * {
+.inputgroup > * {
   display: block;
 }
 
@@ -15,8 +15,8 @@
   margin-bottom: 10px;
 }
 
-.input-group input,
-.input-group select {
+.inputgroup input,
+.inputgroup select {
   margin: 7px 0;
   width: 100%;
   padding: 15px 0;
@@ -25,16 +25,16 @@
   border-radius: 2px;
 }
 
-.input-group input[type="text"]:focus,
-.input-group input[type="text"]:active,
-.input-group input[type="email"]:focus,
-.input-group input[type="email"]:active,
-.input-group select:focus,
-.input-group select:active {
+.inputgroup input[type="text"]:focus,
+.inputgroup input[type="text"]:active,
+.inputgroup input[type="email"]:focus,
+.inputgroup input[type="email"]:active,
+.inputgroup select:focus,
+.inputgroup select:active {
   border-color: #2977f5;
 }
 
-.input-group:last-child {
+.inputgroup:last-child {
   display: flex;
   justify-content: center;
 }
@@ -57,7 +57,7 @@
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
+
   resize: none;
 }
 .form {
@@ -75,5 +75,5 @@
   text-align: center;
   align-items: center;
   margin-top: 10px;
-  color: black;
+  color: white;
 }

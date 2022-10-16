@@ -1,11 +1,14 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 import Navbar from "/components/Navbar";
-import Dashboard from "../components/dashboard";
-import Singup from "../components/singup";
-import styles from "../styles/Checkout.module.css";
+import styles from "../../styles/Checkout.module.css";
+import { useRouter } from "next/router";
 
-export default function Component() {
+import clientPromise from "../../lib/mongodb";
+
+export default function Component(props) {
   const { data: session } = useSession();
+  const router = useRouter();
+  const { pid } = router.query;
   return (
     <>
       <Navbar session={session} />
@@ -77,9 +80,11 @@ export default function Component() {
           <input type="number" name="Mobile no" id="Mobile no" required />
         </div>
 
-        <p className={styles.priceoof}>Price: </p>
-        <p className={styles.priceoof}>Delivery Charge: </p>
-        <p className={styles.priceoof}>Total Price: </p>
+        <p className={styles.priceoof}>Price: {props.test.price}</p>
+        <p className={styles.priceoof}>Delivery Charge: $2.00</p>
+        <p className={styles.priceoof}>
+          Total Price: ${parseFloat(props.test.price.slice(1)) + 2}{" "}
+        </p>
         <p className={styles.priceoof}>Mode of Payment: Cash on Delivery</p>
         <div className={styles.inputgroup}>
           <button
@@ -94,4 +99,24 @@ export default function Component() {
       </form>
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const client = await clientPromise;
+
+  const db = client.db("e-commerce");
+  console.log(context.params.id);
+  let products = await db.collection("products").find({}).toArray();
+  let final;
+  products ? JSON.parse(JSON.stringify(products)) : null;
+  for (let product in products) {
+    if (context.params.id === products[product]._id.toString()) {
+      final = products[product];
+    }
+  }
+  console.log(final);
+  let test = JSON.parse(JSON.stringify(final));
+  return {
+    props: { test },
+  };
 }

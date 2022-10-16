@@ -33,7 +33,11 @@ function Products({ products }) {
                   </Link>
                 </button>
                 {/* <button className={styles.wishbutton}>WishList</button> */}
-                <button className={styles.cartbutton}>Buy Now</button>
+                <button className={styles.cartbutton}>
+                  <Link href={`/checkout/${product._id}`}>
+                    <a>Buy Now</a>
+                  </Link>
+                </button>
               </div>
             </div>
           ))}

@@ -31,7 +31,11 @@ function Products(props) {
             <h1 className={styles.name}>{props.test.name}</h1>
             <h6 className={styles.price}>{props.test.price}</h6>
             <div className={styles.description}>{props.test.description}</div>
-            <button className={button.cartbutton}>Buy Now</button>
+            <button className={button.cartbutton}>
+              <Link href={`/checkout/${props.test._id}`}>
+                <a>Buy Now</a>
+              </Link>
+            </button>
           </div>
         </div>
       </div>
