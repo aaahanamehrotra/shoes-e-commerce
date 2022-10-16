@@ -3,6 +3,7 @@ import styles from "../styles/About.module.css";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 import Navbar from "../components/Navbar";
+import data from "../data/aboutus";
 
 function About() {
   const { data: session } = useSession();
@@ -32,13 +33,6 @@ function About() {
             voluptates.
           </p>
           <br />
-          {/* <Image
-            src={"/images/favicon.png"}
-            alt=""
-            width="500"
-            height="500"
-            className={styles.logo}
-          /> */}
         </section>
         <aside className={styles.sidebar}>
           <p className={styles.red}>ANNOUNCEMENT!</p>
@@ -51,26 +45,12 @@ function About() {
         </aside>
       </div>
       <div className={styles.stats}>
-        <div className={styles.component}>
-          <Image src={"/images/usp.png"} width={80} height={80} />
-
-          <h6 className={styles.text}>Wide Range of Products</h6>
-        </div>
-        <div className={styles.component}>
-          <Image src={"/images/usp2.png"} width={80} height={80} />
-
-          <h6 className={styles.text}>Multiple Stores</h6>
-        </div>
-        <div className={styles.component}>
-          <Image src={"/images/usp3.png"} width={80} height={80} />
-
-          <h6 className={styles.text}>Happy Customers</h6>
-        </div>
-        <div className={styles.component}>
-          <Image src={"/images/usp4.png"} width={80} height={80} />
-
-          <h6 className={styles.text}>Satisfaction Guaranteed</h6>
-        </div>
+        {data.map((d) => (
+          <div className={styles.component}>
+            <Image src={d.img} width={80} height={80} />
+            <h6 className={styles.text}>{d.text}</h6>
+          </div>
+        ))}
       </div>
     </>
   );
