@@ -28,7 +28,7 @@ export default function Component(props) {
         </div>
 
         <div className={styles.inputgroup}>
-          <label for="email" className={styles.label}>
+          <label htmlFor="email" className={styles.label}>
             Email
           </label>
           <input
@@ -48,7 +48,7 @@ export default function Component(props) {
         </div>
 
         <div className={styles.inputgroup}>
-          <label for="address" className={styles.label}>
+          <label htmlFor="address" className={styles.label}>
             Address
           </label>
           <textarea
