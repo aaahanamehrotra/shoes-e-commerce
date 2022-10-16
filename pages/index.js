@@ -46,7 +46,7 @@ export default function Component() {
         <h1 className={testimonials.h1}>Testimonials</h1>
         <div className={testimonials.cards}>
           {testimonialdata.map((testimonial) => (
-            <div className={testimonials.card} key={testimonial.key}>
+            <div className={testimonials.card} key={testimonial.id}>
               <div className={testimonials.top}>
                 <Image
                   src={testimonial.img}
