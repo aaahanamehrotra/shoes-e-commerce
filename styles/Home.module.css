@@ -53,7 +53,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 10px solid #004100;
+  border-top: 16px solid #005800;
+
   margin: 20px;
 }
 
